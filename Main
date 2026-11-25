@@ -1,7 +1,7 @@
 if getgenv().KiciaRebuild and getgenv().KiciaRebuild.Unload then
     pcall(getgenv().KiciaRebuild.Unload)
 end
-if not game:IsLoaded() then game.Loaded:Wait() end
+if not game:IsLoaded() then game.Loaded:Wait() end 
 
 local K = { connections = {}, cleanups = {}, destroyed = false }
 getgenv().KiciaRebuild = K
